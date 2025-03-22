@@ -1,8 +1,80 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
 }
 
 h1 {
-    color: #333;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.holo-text {
+    color: #00FF96;
+    background: linear-gradient(45deg, #00FF96, #8A2BE2, #00FFFF, #00FF96);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: holo-effect 5s linear infinite;
+}
+
+.holo-subtext {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #00FF96;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #00FF96;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #00FF96;
+    color: #0f0f0f;
+    transform: scale(1.05);
+}
+
+/* Holo Effect Animation */
+@keyframes holo-effect {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
 }
