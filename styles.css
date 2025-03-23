@@ -1,109 +1,83 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General body styles */
 body {
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #000000, #2c3e50);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-    background-size: 400% 400%;
-    animation: backgroundMove 10s ease infinite;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
 }
 
-/* Holo Container */
-.container {
-    text-align: center;
-    padding: 30px;
-    position: relative;
-    z-index: 1;
+/* Header styles */
+header {
+  background-color: #3e8e41;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Main Heading */
-.holo-text {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    background: linear-gradient(45deg, #00FF96, #8A2BE2, #00FFFF, #00FF96);
-    background-size: 400%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: glowEffect 5s linear infinite;
-    text-shadow: 0 0 10px rgba(0, 255, 150, 0.5), 0 0 20px rgba(0, 255, 150, 0.4), 0 0 30px rgba(0, 255, 150, 0.3);
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
-/* Subheading */
-.holo-subtext {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    color: #ccc;
-    margin-bottom: 40px;
-    opacity: 0.8;
-    animation: fadeIn 2s ease forwards;
+/* Navigation bar styles */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
 }
 
-/* Button */
-.btn {
-    background: transparent;
-    border: 2px solid #00FF96;
-    padding: 14px 25px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    color: #00FF96;
-    letter-spacing: 1px;
-    border-radius: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 15px rgba(0, 255, 150, 0.5), 0 0 25px rgba(0, 255, 150, 0.4);
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1.1em;
 }
 
-.btn:hover {
-    background: #00FF96;
-    color: #0f0f0f;
-    transform: scale(1.1);
-    box-shadow: 0 0 25px rgba(0, 255, 150, 0.6), 0 0 35px rgba(0, 255, 150, 0.5);
+nav a:hover {
+  background-color: #575757;
 }
 
-/* Keyframe Animations */
-@keyframes glowEffect {
-    0% {
-        background-position: 100% 0%;
-    }
-    50% {
-        background-position: 0% 100%;
-    }
-    100% {
-        background-position: 100% 0%;
-    }
+/* Section styles */
+section {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes backgroundMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Call-to-action button styles */
+.cta-button {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #d32f2f;
 }
